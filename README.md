@@ -5,7 +5,7 @@ by Vasileios Voutsinos, Kristoffer E. Johansson, Fia B. Larsen, Martin Grønbæk
 Contents
 --------
 - **library**: Script and input files for makeing the DNA libraries
-- **counts**: Sequencing counts and raw FASTQ files are available at ERDA
-- **score**: Scripts for calculating scores
+- **counts**: Scripts for processing FASTQ files. Output counts and raw FASTQ files are available on ERDA
+- **score**: Scripts for calculating scores. FACS data files are available on ERDA
 - **models**: Scripts for training models
 
