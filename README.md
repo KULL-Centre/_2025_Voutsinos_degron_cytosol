@@ -8,4 +8,4 @@ Contents
 - **counts**: Scripts for processing FASTQ files. Output counts and raw FASTQ files are available on ERDA
 - **score**: Scripts for calculating scores. FACS data files are available on ERDA
 - **models**: Scripts for training models
-
+- **plots**: Scripts for plotting 
