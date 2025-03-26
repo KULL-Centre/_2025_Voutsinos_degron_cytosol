@@ -8,4 +8,6 @@ Contents
 - **counts**: Scripts for processing FASTQ files. Output counts and raw FASTQ files are available on ERDA
 - **score**: Scripts for calculating scores. FACS data files are available on ERDA
 - **models**: Scripts for training models
+- **pathogenic**: Scripts for analysing pathogenic variants from ClinVar
+- **proteome**: Scripts for building the "cytosolic proteome" and structural analysis 
 - **plots**: Scripts for plotting 
