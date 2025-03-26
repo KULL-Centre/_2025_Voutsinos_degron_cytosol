@@ -791,21 +791,20 @@ stopifnot(all( ! is.na(cytosol$set) ))
 print("Protein sets")
 print(table(cytosol$set))
 
-# mapped uniprot entries
-unip_map_fn = "unique_proteins_240809_uniprot_mapped.csv"
-unip = read.csv(unip_map_fn)
-stopifnot(length(unip$seq_aa)==length(unique(unip$seq_aa)))
-# from the list of uniprot entries, find the first with the fewest characters
-unip$first_short = sapply(unip$uniprot, function(s){ l = strsplit(gsub("[]'[]","",s), ", ")[[1]]; l[order(nchar(l))[1]] })
-
-cytosol_unip_map = unip[match(cytosol$seq_aa,unip$seq_aa),"uniprot"]
-cytosol_first_short = unip[match(cytosol$seq_aa,unip$seq_aa),"first_short"]
-# if the original uniprot is in the list, use this. Else use the first&shortest unless this is nan, then use the original.
-cytosol$uniprot2 = apply(cbind(cytosol$uniprot,cytosol_unip_map,cytosol_first_short), MARGIN=1,
-                         function(v){ if(grepl(v[1],v[2])) v[1] else if(v[3]=="nan") v[1] else v[3] })
-n_diff = sum(cytosol$uniprot!=cytosol$uniprot2)
-print(sprintf("Made uniprot2 annotation (differ for %d proteins (%.1f%%)) with %d 'NoUnip' and %d 'nan' using file: %s", n_diff, n_diff/nrow(cytosol)*100,
-              sum(grepl("NoUnip", cytosol$uniprot2)), sum(grepl("nan", cytosol$uniprot2)), unip_map_fn))
+# # mapped uniprot entries
+# unip_map_fn = "unique_proteins_240809_uniprot_mapped.csv"
+# unip = read.csv(unip_map_fn)
+# stopifnot(length(unip$seq_aa)==length(unique(unip$seq_aa)))
+# # from the list of uniprot entries, find the first with the fewest characters
+# unip$first_short = sapply(unip$uniprot, function(s){ l = strsplit(gsub("[]'[]","",s), ", ")[[1]]; l[order(nchar(l))[1]] })
+# cytosol_unip_map = unip[match(cytosol$seq_aa,unip$seq_aa),"uniprot"]
+# cytosol_first_short = unip[match(cytosol$seq_aa,unip$seq_aa),"first_short"]
+# # if the original uniprot is in the list, use this. Else use the first&shortest unless this is nan, then use the original.
+# cytosol$uniprot2 = apply(cbind(cytosol$uniprot,cytosol_unip_map,cytosol_first_short), MARGIN=1,
+#                          function(v){ if(grepl(v[1],v[2])) v[1] else if(v[3]=="nan") v[1] else v[3] })
+# n_diff = sum(cytosol$uniprot!=cytosol$uniprot2)
+# print(sprintf("Made uniprot2 annotation (differ for %d proteins (%.1f%%)) with %d 'NoUnip' and %d 'nan' using file: %s", n_diff, n_diff/nrow(cytosol)*100,
+#               sum(grepl("NoUnip", cytosol$uniprot2)), sum(grepl("nan", cytosol$uniprot2)), unip_map_fn))
 
 
 # === dump ===
