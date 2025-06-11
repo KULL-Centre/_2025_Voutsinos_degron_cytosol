@@ -12,7 +12,7 @@ Contents
 - **proteome**: Scripts for building the "cytosolic proteome" and structural analysis 
 - **plots**: Scripts for plotting 
 
-Sequencing counts and FASTQ files are available on [ERDA](https://sid.erda.dk/sharelink/FUolgBZn9W)
+Sequencing counts, FASTQ files and FACS data are available on [ERDA](https://sid.erda.dk/sharelink/FUolgBZn9W)
 
 Peptide abundance predictor (PAP)
 ---------------------------------
