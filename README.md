@@ -14,6 +14,8 @@ Contents
 
 Sequencing counts, FASTQ files and FACS data are available on [ERDA](https://sid.erda.dk/sharelink/FUolgBZn9W)
 
+FASTQ files are deposited at [NCBI SRA](https://www.ncbi.nlm.nih.gov/sra) under BioProject ID: PRJNA1277273
+
 Peptide abundance predictor (PAP)
 ---------------------------------
 
