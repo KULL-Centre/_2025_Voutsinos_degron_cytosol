@@ -1,6 +1,6 @@
 # _2025_Voutsinos_degron_cytosol
 Scripts and output from "A complete map of human cytosolic degrons and characterization of their exposure and relevance for disease"
-by Vasileios Voutsinos, Kristoffer E. Johansson, Fia B. Larsen, Martin Grønbæk-Thygesen, Nicolas Jonsson, Giulio Tesei, Amelie Stein, Douglas M. Fowler, Kresten Lindorff-Larsen and Rasmus Hartmann-Petersen.
+by Vasileios Voutsinos, Kristoffer E. Johansson, Fia B. Larsen, Martin Grønbæk-Thygesen, Nicolas Jonsson, Emma Holm-Olesen, Giulio Tesei, Amelie Stein, Douglas M. Fowler, Kresten Lindorff-Larsen and Rasmus Hartmann-Petersen.
 
 [Preprint](https://doi.org/10.1101/2025.05.10.653233)
 
