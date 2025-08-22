@@ -30,3 +30,5 @@ The file PapLab.ipynb is made to run as a webservice at Google colab available a
 https://colab.research.google.com/github/KULL-Centre/_2025_Voutsinos_degron_cytosol/blob/main/PapLab.ipynb
 
 This requires a login for Googles services, e.g. a gmail.
+
+[![DOI](https://zenodo.org/badge/897328674.svg)](https://doi.org/10.5281/zenodo.16925278)
