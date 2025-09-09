@@ -14,9 +14,10 @@ Contents
 - **proteome**: Scripts for building the "cytosolic proteome" and structural analysis 
 - **plots**: Scripts for plotting 
 
-Sequencing counts, FASTQ files and FACS data are available on [ERDA](https://sid.erda.dk/sharelink/FUolgBZn9W)
+Supplementary data, sequencing counts, FASTQ files and FACS data are available on ERDA, [DOI: 10.17894/ucph.e1cbb4ae-6966-4c0f-95a1-c81af94cfdaf
+](https://doi.org/10.17894/ucph.e1cbb4ae-6966-4c0f-95a1-c81af94cfdaf)
 
-FASTQ files are deposited at [NCBI SRA](https://www.ncbi.nlm.nih.gov/sra) under BioProject ID: PRJNA1277273
+FASTQ files are also deposited at [NCBI SRA](https://www.ncbi.nlm.nih.gov/sra) under BioProject ID: PRJNA1277273
 
 Peptide abundance predictor (PAP)
 ---------------------------------
