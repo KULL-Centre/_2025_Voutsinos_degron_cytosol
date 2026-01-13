@@ -8,7 +8,7 @@ import numpy as np
 import time
 # imports tensorfolw on request
 
-__version__ = "0.2"
+__version__ = "0.3"
 
 aa_one_nat = "ACDEFGHIKLMNPQRSTVWY"
 
