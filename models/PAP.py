@@ -362,8 +362,9 @@ class KerasModelCNN2W(KerasModel):
         model_full  = keras.models.Model(inputs=[input_int,input_ct], outputs=output_full)
         if not os.path.isfile(model_param['weight_file']):
             raise ValueError("Cannot find weights file '%s'" % (model_param['weight_file']))
-        model_full.load_weights(model_param['weight_file'], skip_mismatch=False, by_name=True, options=None)
-
+        # model_full.load_weights(model_param['weight_file'], skip_mismatch=False, by_name=True, options=None)
+        model_full.load_weights(model_param['weight_file'])
+        
         # build models for each channel to be used later
         self.model_int = keras.models.Model(inputs=input_int, outputs=output_int)
         self.model_ct = keras.models.Model(inputs=input_ct, outputs=output_ct)
