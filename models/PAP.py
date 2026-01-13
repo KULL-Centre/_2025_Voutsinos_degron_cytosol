@@ -297,7 +297,7 @@ cnn2w1['ct_res'] = 5
 cnn2w1['nf_ct'] = 25
 cnn2w1['nn'] = 50
 cnn2w1['act'] = 'elu'
-cnn2w1['weight_file'] = './pap_weights/cnn2w1.keras'
+cnn2w1['weight_file'] = './pap_weights/cnn2w1_weights.h5'
 
 cnn2w7 = {}
 cnn2w7['type'] = 'keras'
@@ -309,7 +309,7 @@ cnn2w7['ct_res'] = 5
 cnn2w7['nf_ct'] = 25
 cnn2w7['nn'] = 50
 cnn2w7['act'] = 'elu'
-cnn2w7['weight_file'] = './pap_weights/cnn2w7.keras'
+cnn2w7['weight_file'] = './pap_weights/cnn2w7_weights.h5'
 
 class KerasModel:
     """Abstract base class of Kreas models
@@ -362,8 +362,7 @@ class KerasModelCNN2W(KerasModel):
         model_full  = keras.models.Model(inputs=[input_int,input_ct], outputs=output_full)
         if not os.path.isfile(model_param['weight_file']):
             raise ValueError("Cannot find weights file '%s'" % (model_param['weight_file']))
-        # model_full.load_weights(model_param['weight_file'], skip_mismatch=False, by_name=True, options=None)
-        model_full.load_weights(model_param['weight_file'])
+        model_full.load_weights(model_param['weight_file'], skip_mismatch=False, by_name=True)
         
         # build models for each channel to be used later
         self.model_int = keras.models.Model(inputs=input_int, outputs=output_int)
