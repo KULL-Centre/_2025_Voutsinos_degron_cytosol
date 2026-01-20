@@ -17,7 +17,11 @@ Contents
 Supplementary data, sequencing counts, FASTQ files and FACS data are available on ERDA, [DOI: 10.17894/ucph.e1cbb4ae-6966-4c0f-95a1-c81af94cfdaf
 ](https://doi.org/10.17894/ucph.e1cbb4ae-6966-4c0f-95a1-c81af94cfdaf)
 
+Supplementary data also available on Zenodo: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18269720.svg)](https://doi.org/10.5281/zenodo.18269720)
+
 FASTQ files are also deposited at [NCBI SRA](https://www.ncbi.nlm.nih.gov/sra) under BioProject ID: PRJNA1277273
+
+Zenodo archive of this repository: [![DOI](https://zenodo.org/badge/897328674.svg)](https://doi.org/10.5281/zenodo.16925278)
 
 Peptide abundance predictor (PAP)
 ---------------------------------
@@ -34,4 +38,3 @@ https://colab.research.google.com/github/KULL-Centre/_2025_Voutsinos_degron_cyto
 
 This requires a login for Googles services, e.g. a gmail.
 
-[![DOI](https://zenodo.org/badge/897328674.svg)](https://doi.org/10.5281/zenodo.16925278)
