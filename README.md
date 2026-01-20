@@ -22,7 +22,9 @@ FASTQ files are also deposited at [NCBI SRA](https://www.ncbi.nlm.nih.gov/sra) u
 Peptide abundance predictor (PAP)
 ---------------------------------
 
-Predictive models described in the paper are available in the script models/PAP.py. The neural network model requires a weight file compressed in models/pap_weights.tgz and depends on Keras2 available in tensorflow version 2.14.
+Predictive models described in the paper are available in the script models/PAP.py. The neural network model requires a weight file compressed in models/pap_weights.tgz ~~and depends on Keras2 available in tensorflow version 2.14~~.
+
+Update Jan 13, 2026: Weights are reformatted to H5 format making PAP.py compatible with all tested versions of Keras3. PapLab.ipynb updated accordingly.
 
 PAP webserver
 -------------
